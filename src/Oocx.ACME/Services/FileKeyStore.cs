@@ -1,7 +1,5 @@
-﻿using System;
-using System.Diagnostics;
+﻿using System.Diagnostics;
 using System.IO;
-using System.Security.AccessControl;
 using System.Security.Cryptography;
 using static Oocx.ACME.Common.Log;
 
