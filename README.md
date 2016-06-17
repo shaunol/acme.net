@@ -1,3 +1,10 @@
+**This is just a hacked up version of the libraries for my own horrible needs, I'd stay away..**
+
+* PFX export functionality not implemented
+* Usages of SecureString removed
+* Oocx.ACME, Oocx.ACME.Common and Oocx.ACME.Asn1PKCS running on corefx 1.0.0-rc2
+* All other projects (including tests for the above!) are removed.
+
 # Oocx.ACME - an ACME protocol library and simple Let's Encrypt client
 
 [![Build status](https://ci.appveyor.com/api/projects/status/igpc0c9u9sxresij?svg=true)](https://ci.appveyor.com/project/oocx/acme-net)
