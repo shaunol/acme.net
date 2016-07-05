@@ -144,6 +144,7 @@ namespace Oocx.ACME.Client
                 Error($"{challenge.Error.Type} : {challenge.Error.Detail}");
             }
 
+
             return challenge;
         }
 
@@ -213,11 +214,12 @@ namespace Oocx.ACME.Client
                 return certificateResponse as TResult;
             }
 
-            var responseContent = await response.Content.ReadAsAsync<TResult>().ConfigureAwait(false);
+            var responseBody = await response.Content.ReadAsStringAsync().ConfigureAwait(false);
+            var responseObj = JsonConvert.DeserializeObject<TResult>(responseBody);
 
-            GetHeaderValues(response, responseContent);
+            GetHeaderValues(response, responseObj);
 
-            return responseContent;
+            return responseObj;
         }
 
         private static void GetHeaderValues<TResult>(HttpResponseMessage response, TResult responseContent)

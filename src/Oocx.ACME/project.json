@@ -1,4 +1,4 @@
-﻿{
+{
   "version": "0.0.0-beta-*",
   "description": "ACME.net can be used to create clients for the ACME (Automatic Certificate Management Environment) protocol. ",
   "authors": [ "Mathias Raacke" ],
@@ -11,9 +11,10 @@
       "version": "1.0.0-rc2-3002702",
       "type": "platform"
     },
-    "Microsoft.AspNet.WebApi.Client": "5.2.3",
     "Oocx.ACME.Common": "0.0.0-beta-*",
-    "Oocx.Asn1PKCS": "0.0.0-beta-*"
+    "Oocx.Asn1PKCS": "0.0.0-beta-*",
+    "Newtonsoft.Json": "8.0.3",
+    "Microsoft.AspNet.WebApi.Client": "5.2.3"
   },
 
   "frameworks": {
