@@ -2,25 +2,26 @@
   "version": "0.0.0-beta-*",
   "description": "Helper classes that are used by ACME.net to work with various PKCS standards like certificate signing requests.",
   "authors": [ "Mathias Raacke" ],
-  "tags": [ "asn1" ],
-  "projectUrl": "https://github.com/oocx/acme.net",
-  "licenseUrl": "https://github.com/oocx/acme.net/blob/master/LICENSE",
+  "packOptions": {
+    "tags": [ "asn1" ],
+    "projectUrl": "https://github.com/oocx/acme.net",
+    "licenseUrl": "https://github.com/oocx/acme.net/blob/master/LICENSE"
+  },
 
   "dependencies": {
     "Microsoft.NETCore.App": {
-      "version": "1.0.0-rc2-3002702",
+      "version": "1.0.0",
       "type": "platform"
     },
     "Portable.BouncyCastle": "1.8.1.1",
-    "System.Diagnostics.TraceSource": "4.0.0-rc2-24027",
-    "System.Security.Cryptography.Csp": "4.0.0-rc2-24027"
+    "System.Diagnostics.TraceSource": "4.0.0",
+    "System.Security.Cryptography.Csp": "4.0.0"
   },
 
   "frameworks": {
     "netcoreapp1.0": {
       "imports": [
         "dotnet5.6",
-        "dnxcore50",
         "portable-net45+win8"
       ]
     }

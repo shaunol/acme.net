@@ -2,13 +2,15 @@
   "version": "0.0.0-beta-*",
   "description": "Utility classes for ACME.net",
   "authors": [ "Mathias Raacke" ],
-  "tags": [ "" ],
-  "projectUrl": "https://github.com/oocx/acme.net",
-  "licenseUrl": "https://github.com/oocx/acme.net/blob/master/LICENSE",
+  "packOptions": {
+    "tags": [ "" ],
+    "projectUrl": "https://github.com/oocx/acme.net",
+    "licenseUrl": "https://github.com/oocx/acme.net/blob/master/LICENSE"
+  },
 
   "dependencies": {
     "Microsoft.NETCore.App": {
-      "version": "1.0.0-rc2-3002702",
+      "version": "1.0.0",
       "type": "platform"
     }
   },
